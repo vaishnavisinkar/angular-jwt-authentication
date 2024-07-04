@@ -1,0 +1,9 @@
+<form [formGroup]="loginForm" class="login-form">
+    <h3>Login</h3>
+    <input type="text" name="username" id="username" placeholder="Enter your User name" formControlName="username" />
+    <input type="password" name="password" id="password" placeholder="Enter your password" formControlName="password" />
+    <button type="button" (click)="login()">Login</button>
+    <h5>Don't have an account ?</h5>
+    <button type="button" routerLink="/signup">Signup</button>
+
+</form>

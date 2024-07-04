@@ -1,0 +1,12 @@
+<form [formGroup]="signupForm" class="signup-form">
+    <h3>Signup</h3>
+    <input type="text" name="name" id="name" placeholder="Enter your name" formControlName="name" />
+    <input type="text" name="username" id="username" placeholder="Enter your User name" formControlName="username" />
+    <input type="password" name="password" id="password" placeholder="Enter your password" formControlName="password" />
+    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter confirm password" formControlName="confirmPassword" />
+
+    <button type="button" (click)="signup()">SignUp</button>
+    <h5>Already have an account?</h5>
+    <button type="button" routerLink="/">Login</button>
+
+</form>
